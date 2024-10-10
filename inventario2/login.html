@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="stilo.css"> <!-- Asegúrate de que el archivo esté en la misma carpeta -->
+</head>
+<body>
+    <div class="container">
+        <form action="login.php" method="post">
+            <h2>Iniciar Sesión</h2>
+            <input type="text" name="usuario" placeholder="Nombre de Usuario" required>
+            <input type="password" name="contraseña" placeholder="Contraseña" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <button class="button-secondary" onclick="location.href='registro.html'">Registrarse</button> <!-- Cambia 'registro.html' por la página deseada -->
+    </div>
+</body>
+</html>
