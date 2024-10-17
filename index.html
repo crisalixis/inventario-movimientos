@@ -1,0 +1,37 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Control de inventario</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Control de inventario</h2>
+        <form action="procesar_inventario.php" method="POST">
+            <div class="form-group">
+                <label for="nombreHerramienta">Nombre de la herramienta</label>
+                <input type="text" id="nombreHerramienta" name="nombreHerramienta" required>
+            </div>
+            <div class="form-group">
+                <label for="tipoAccion">Tipo de acción</label>
+                <select id="tipoAccion" name="tipoAccion" required>
+                    <option value="devolver">Devolver material</option>
+                    <option value="solicitar">Solicitar material</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="cantidad">Cantidad</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="responsable">Profesor responsable</label>
+                <input type="text" id="responsable" name="responsable" required>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
