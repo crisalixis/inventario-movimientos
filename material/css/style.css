@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Formulario registro */
+
+.body-register {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2e7ec;
+}
+
+.form-register {
+    width: 450px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.form-register h1{
+    text-align: center; 
+    color: #38610a; 
+}
+
+hr {
+    border: 0;
+    background: #dfc8aa;
+}
+
+.form {
+    background: #fff;
+    margin: auto;
+    padding: 20px 30px 40px 50px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 15px auto 5px auto;
+}
+
+input{
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    padding: 5px;
+    border: 1px solid #85929e;
+    border-radius: 5px;
+}
+
+.btn-save {
+    font-size: 15px;
+    background-color: #23610a;
+    padding: 10px;
+    color: #FFF;
+    letter-spacing: 1px;
+    border: 0;
+    cursor: pointer;
+    margin: 15px auto;
+}
+
+.alerta {
+    width: 100%;
+    background: #66c07d66;
+    border-radius: 6px;
+    margin: 20px auto; 
+ }
+ 
+ .msg-error {
+     color: #e65656;
+ }
+ 
+ .msg-save {
+     color: #126e00;
+ }
+ 
+ .alerta p {
+     padding: 10px;
+ }
+
+/* Lista materiales */
+h1, h2 {
+    font-size: 35px;
+    display: inline-block;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+/* Botones de Editar y Eliminar */
+.link-edit {
+    color:#126e00
+}
+
+.link-delete {
+    color: #e65656;
+}
+
+/* Buscador */
+.form-search {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    float: right;
+    background: initial;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn-search {
+    background: #2d7a2a;
+    color: #fff;
+    padding: 10px;
+    border: 0;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+/* Boton crear Usuario */
+.btn-new {
+    display: inline-block;
+    background: #2d7a2a;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 8px;
+    margin: 20px;
+    border: 0.5px solid;
+    padding: 5px 10px;
+    text-decoration: none;
+}
