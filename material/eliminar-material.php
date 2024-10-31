@@ -6,7 +6,7 @@ if (!empty($_GET['id'])) {
     $idmaterial = $_GET['id'];
 
     // Ejecutar la consulta para cambiar el estado a 0 (marcar como eliminado)
-    $query_delete = mysqli_query($conexion, "UPDATE materiales SET estado = 0 WHERE idmaterial = $idmaterial");
+    $query_delete = mysqli_query($conexion, "UPDATE materiales SET estado = 0 WHERE id_material = $idmaterial");
 
     // Redirigir a lista-material.php si la eliminación fue exitosa
     if ($query_delete) {

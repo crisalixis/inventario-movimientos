@@ -28,12 +28,14 @@
                 <th>Id Material</th>
                 <th>Nombre</th>
                 <th>Descripcion</th>
+                <th>Categoria</th>
                 <th>Cantidad</th>
                 <th>Codigo</th>
+                <th>Fecha de ingreso</th>
                 <th>Acciones</th>
             </tr>
             <?php 
-                $query = mysqli_query($conexion, "SELECT * FROM materiales WHERE (idmaterial LIKE '%$busqueda%' OR nombre LIKE '%$busqueda%' OR  descripcion LIKE '%$busqueda%' OR codigo LIKE '%$busqueda%') AND estado = 1 ORDER BY idmaterial ASC");
+                $query = mysqli_query($conexion, "SELECT * FROM materiales WHERE (id_material LIKE '%$busqueda%' OR nombre LIKE '%$busqueda%' OR descripcion LIKE '%$busqueda%' OR categoria LIKE '%$busqueda%' OR codigo LIKE '%$busqueda%'  OR fecha_ingreso LIKE '%$busqueda%') AND estado = 1 ORDER BY id_material ASC");
 
                 $result = mysqli_num_rows($query);
 
@@ -41,14 +43,16 @@
                     while ($data = mysqli_fetch_array($query)){
                     ?>
                         <tr>
-                            <td><?php echo $data['idmaterial'] ?></td>
+                            <td><?php echo $data['id_material'] ?></td>
                             <td><?php echo $data['nombre'] ?></td>
                             <td><?php echo $data['descripcion'] ?></td>
+                            <td><?php echo $data['categoria'] ?></td>
                             <td><?php echo $data['cantidad'] ?></td>
                             <td><?php echo $data['codigo'] ?></td>
+                            <td><?php echo $data['fecha_ingreso'] ?></td>
                             <td>
-                                <a href="editar-material.php?id=<?php echo $data['idmaterial'] ?>" class="link-edit"> Editar</a>
-                                <a href="eliminar-material.php?id=<?php echo $data['idmaterial'] ?>" class="link-delete"> Eliminar</a>
+                                <a href="editar-material.php?id=<?php echo $data['id_material'] ?>" class="link-edit"> Editar</a>
+                                <a href="eliminar-material.php?id=<?php echo $data['id_material'] ?>" class="link-delete"> Eliminar</a>
                             </td>
                         </tr>
                 <?php
